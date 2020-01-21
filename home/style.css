@@ -1,0 +1,601 @@
+*{
+  padding: 0;
+  margin: 0;
+  /* box-sizing: border-box; */
+}
+
+body{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+/* #intro{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-image: url("assets/bg.jpg");
+  background-size: cover;
+  overflow: hidden;
+} */
+
+
+
+#canvasBg{
+  position: absolute;
+  margin-left: 3%;
+  margin-top: 10%;
+  width: 20%;
+  height: 60%;
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+/* LINK FORMATTING */
+
+.hLink{
+  font-family: 'Cormorant Garamond', serif;
+  /* font-family: 'Work Sans', sans-serif; */
+  z-index: 1000;
+  color: black;
+  letter-spacing: 2;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 42px;
+}
+
+/* NAVIGATION CONTAINER */
+
+#nav{
+  font-family: sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  position: absolute;
+  margin-left: 80px;
+  margin-top: 140px;
+  width: 250px;
+  height: 400px;
+  background-color: rgba(255, 255, 255, 0.1);
+
+  /* TEXT*/
+  text-align: center;
+  letter-spacing: 15px;
+}
+
+/* INDIVIDUAL NAV CONTAINERS */
+
+#nav a{
+  text-decoration: none;
+  font-family: 'Quicksand', sans-serif;
+  color: black;
+  display: block;
+  height:23%;
+  width: 100%;
+  margin-bottom: 3.7%;
+  line-height: 93px;
+  border: 0px black solid;
+  background-color: transparent;
+}
+
+#nav a:hover{
+  background-color: rgba(0, 0, 0, 0.2);
+  color: white;
+  cursor: crosshair;
+}
+
+
+/* VBACKGROUND CONTAINER */
+
+#canvasContainer{
+  position: absolute;
+  z-index: -1;
+  margin-left: 80px;
+  margin-top: 140px;
+  width: 250px;
+  height: 400px;
+  color: pink;
+}
+
+/* VIDEO BACKGROUNDS  */
+
+.ccVid{
+position: block;
+width: 100%;
+height: 100%;
+object-fit: fill;
+z-index: -1000;
+}
+
+/* INDIVIDUAL VBACKGROUND CONTAINERS */
+
+.cc1{
+  display: block;
+  height:23%;
+  width: 100%;
+  margin-bottom: 3.3%;
+}
+.cc2{
+  display: block;
+  height:23%;
+  width: 100%;
+  margin-bottom: 3.6%;
+}
+.cc3{
+  display: block;
+  height:23%;
+  width: 100%;
+    margin-bottom: 3.8%;
+}
+.cc4{
+  display: block;
+  height:23%;
+  width: 100%;
+
+}
+
+/* TITLE */
+
+#title{
+  position: absolute;
+  font-family: 'Cormorant Garamond', serif;
+  margin-left: 50px;
+  margin-top: 25px;
+  width: 340px;
+  height: 115px;
+ line-height: 115px;
+  background-color: rgba(0, 0, 0, 0);
+  text-align: center;
+  color: black;
+  font-style: none;
+  letter-spacing: 2;
+}
+
+/* TEXT FORMATTING  */
+
+span {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+}
+
+/* LINES */
+
+.listLine{
+ width: 99.5%;
+ height: 1px;
+ color: black; /* old IE */
+ background-color: black; /* Modern Browsers */
+
+}
+
+/* CONTENT CONTAINER */
+#content{
+  position: absolute;
+  right: 0px;
+  top: 35px;
+  margin-right: 5%;
+  width: 63%;
+  height: 91%;
+  /* background-color: rgba(255, 117, 233, 0.4); */
+  background-color: transparent;
+}
+
+/* INNER CONTENT */
+.innerContent{
+  position: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* INDIVIDUAL CONTENT */
+
+p{
+padding: 5%;
+line-height: 2;
+letter-spacing: 2;
+font-family: 'Open Sans', sans-serif;
+font-size: 14px;
+color: black;
+}
+
+img{
+  width: 100%;
+  height: auto;
+  padding: 0%;
+  margin-bottom: 5%;
+  image-orientation: from-image;
+}
+
+video{
+  width: 100%;
+  height: auto;
+  padding: 0%;
+  margin-bottom: 5%;
+}
+
+.conVid{
+  width: 80%;
+  height: 80%;
+  padding: 0%;
+  margin-left: 10%;
+  /* object-fit: fill; */
+}
+
+.flip{
+  transform: rotate(90deg);
+}
+
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+
+#about{
+  display: block;
+  overflow-y: scroll;
+  /* background-color: rgba(0, 0, 0, 0.90); */
+  background-color: transparent;
+}
+#media{
+  display: none;
+  overflow-x: scroll;
+  background-color: rgba(0, 0, 0, 0);
+}
+#exhibits{
+  display: none;
+  background-color: transparent;
+  overflow-x: scroll;
+}
+
+/* TEAM */
+
+#team{
+  display: none;
+  background-color: transparent;
+}
+
+#teamBack{
+  position: absolute;
+  top:0;
+  margin-top: 3.5%;
+  left: 11%;
+  width: 78%;
+  /* left:0;
+  width: 85%; */
+  height: auto;
+}
+
+.nameLinks{
+  color: black;
+  font-family: 'Cormorant Garamond', serif;
+  letter-spacing: 1.5;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 13px;
+  cursor: crosshair;
+}
+
+.nameLinks:hover {
+  font-style: italic;
+}
+
+#teamWrap{
+position: absolute;
+width:100%;
+height: 10%;
+bottom: 5%;
+
+}
+
+#me{
+  position: absolute;
+  top:0;
+  left: 11%;
+  width: 78%;
+  margin-top: 3.5%;
+  height: auto;
+  display:none;
+  background-color: rgba(0, 0, 0, 0.70);
+}
+
+#matt{
+  position: absolute;
+  top:0;
+  left: 11%;
+  width: 78%;
+  margin-top: 3.5%;
+  height: auto;
+  display:none;
+  background-color: rgba(0, 0, 0, 0.70);
+}
+
+#owen{
+  position: absolute;
+  top:0;
+  left: 11%;
+  width: 78%;
+  margin-top: 3.5%;
+  height: auto;
+  display:none;
+  background-color: rgba(0, 0, 0, 0.70);
+}
+
+#sam{
+  position: absolute;
+  top:0;
+  left: 11%;
+  width: 78%;
+  margin-top: 3.5%;
+  height: auto;
+  display:none;
+  background-color: rgba(0, 0, 0, 0.70);
+}
+
+
+#emma{
+  position: absolute;
+  top:0;
+  left: 11%;
+  width: 78%;
+  margin-top: 3.5%;
+  height: auto;
+  display:none;
+  background-color: rgba(0, 0, 0, 0.70);
+}
+
+#tMatt{
+  position: absolute;
+  bottom: 35%;
+  left:11%;
+}
+
+#tMe{
+  position: absolute;
+  bottom: 35%;
+  left:43%;
+
+}
+
+#tSam{
+  position: absolute;
+  bottom: 35%;
+  left:75%;
+}
+
+#tOwen{
+  position: absolute;
+  bottom: -10%;
+  left:28%;
+}
+
+#tEmma{
+  position: absolute;
+  bottom: -10%;
+  left:61%;
+}
+
+#out{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width:100%;
+  height:82%;
+  background-color: transparent;
+  z-index: 1000;
+}
+
+#out2{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width:100%;
+  height:10%;
+  background-color: transparent;
+  z-index: 1000;
+}
+
+
+
+/* --------------------------------------    MEDIA QUERIES   --------------------------------------  */
+
+@media only screen and (min-width: 2000px) {
+  #content{
+    width: 70%;
+  }
+}
+
+@media screen
+  and (min-device-width: 250px)
+  and (max-device-width: 700px){
+
+    *{
+      padding: 0;
+      margin: 0;
+      /* box-sizing: border-box; */
+    }
+
+   .hLink{
+      /* top: 15px; */
+      font-size: 28px;
+    }
+
+    #title{
+      margin-top: 5px;
+      height: 85px;
+      width: 100%;
+     line-height: 85px;
+     margin-left: 0px;
+     margin-top: 0px;
+    }
+
+
+    #nav{
+      font-family: sans-serif;
+      font-size: 10px;
+      font-weight: bold;
+      position: absolute;
+      margin-left: 8%;
+      margin-top: 22%;
+      width: 100%;
+      height: 20px;
+      background-color: rgba(255, 255, 255, 0.1);
+
+      /* TEXT*/
+      text-align: left;
+      letter-spacing: 1px;
+    }
+
+
+    /* INDIVIDUAL NAV CONTAINERS */
+
+    #nav a{
+      float: left;
+      text-decoration: none;
+      font-family: 'Quicksand', sans-serif;
+      color: black;
+      text-align: left;
+      margin-left: 9%;
+      /* display: block; */
+      height:10%;
+      width: 5%;
+      margin-right: 5%;
+      line-height: 20px;
+      border: 0px black solid;
+      background-color: transparent;
+    }
+
+#nav a:hover{
+    background-color: transparent;
+    color: grey;
+    cursor: crosshair;
+  }
+
+
+    #content{
+      position: absolute;
+      left: 5%;
+      top: 18%;
+      width: 90%;
+      height: 76%;
+      /* background-color: rgba(255, 117, 233, 0.4); */
+      background-color: transparent;
+    }
+
+    p{
+      font-size: 12px;
+    }
+
+    #teamWrap{
+
+    width:100%;
+    height: 20%;
+    margin-top: 0%;
+  float: left;
+  top: 50%;
+  position: relative;
+    }
+
+    .nameLinks{
+      color: black;
+      font-family: 'Cormorant Garamond', serif;
+      letter-spacing: 1;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 10px;
+    }
+
+    #tMatt{
+      position: block;
+      bottom: 35%;
+      left: 4%;
+    }
+
+    #tMe{
+      position: block;
+      bottom: 35%;
+      left:37%;
+
+    }
+
+    #tSam{
+      position: block;
+      bottom: 35%;
+      left:71%;
+    }
+
+    #tOwen{
+        position: block;
+      bottom: 15%;
+      left:23%;
+    }
+
+    #tEmma{
+      position: block;
+      bottom: 15%;
+      left:57%;
+    }
+
+    #teamBack{
+
+      top:0;
+      margin-top: 3.5%;
+      left:0px;
+      width: 100%;
+      /* left:0;
+      width: 85%; */
+      min-height: auto;
+    }
+
+    #out{
+      position: absolute;
+      left: 0;
+      top: 0;
+      width:100%;
+      height:40%;
+      background-color: transparent;
+      z-index: 1000;
+    }
+
+    #out2{
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width:100%;
+      height:10%;
+      background-color: transparent;
+      z-index: 1000;
+    }
+
+    .cc1{
+      display: block;
+      height:100%;
+      width: 100%;
+    
+    }
+
+    .cc2{
+      display: none;
+
+    }
+
+    .cc3{
+      display: none;
+
+    }
+
+    .cc4{
+      display: none;
+
+    }
+
+    #canvasContainer{
+      display: block;
+      width: 80%;
+      z-index: -1000;
+      height: 85px;
+      margin-top: 0%;
+      margin-left: 10%;
+
+    }
+
+}
